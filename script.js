@@ -1,8 +1,11 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
- 
+function getFormInput() {
 let item = ["Cupcakes", 'Burgar",  "Fries", "cheese Melt"];
-     OUTPUT.innerHTML += "<p>" + messages[userChoice] + "</p>";
+    const chocolate_Field = document.getElementById("chocolate_Field");
+    let userChoice = chocolate_Field.value;
+    OUTPUT.innerHTML += "<p>" + messages[userChoice] + "</p>"
+}
 function addItem() {
     const itemField = document.getElementById("itemField");
     let userItem = itemField.value;
