@@ -1,7 +1,7 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 function getFormInput() {
-let item = ["Cupcakes", 'Burgar",  "Fries", "cheese Melt"];
+let item = ["Cupcakes", 'Burgar",  "Fries", "Cheese Melt"];
     const chocolate_Field = document.getElementById("chocolate_Field");
     let userChoice = chocolate_Field.value;
     OUTPUT.innerHTML += "<p>" + messages[userChoice] + "</p>"
