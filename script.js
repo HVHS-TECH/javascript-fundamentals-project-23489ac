@@ -1,6 +1,7 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
- let item = ["Cupcakes", 'Burgar",  "Fries", "cheese Melt"];
+ 
+let item = ["Cupcakes", 'Burgar",  "Fries", "cheese Melt"];
 function addItem() {
     const itemField = document.getElementById("itemField");
     let userItem = itemField.value;
