@@ -34,6 +34,12 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>Price: $" + food.price + "</p>";
         OUTPUT.innerHTML += "<p>Money Given: $" + userMoney + "</p>";
         OUTPUT.innerHTML += "<p>Change: $" + change + "</p>";
+        OUTPUT.innerHTML = "<h2>Menu</h2>";
+    
+        for (let i = 0; i < menu.length; i++) {
+        OUTPUT.innerHTML += "<p>" + (i + 1) + menu[i] + " - $" + prices[i] + "</p>";
+    }
+
     }
 }
 
