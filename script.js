@@ -7,7 +7,7 @@ function getFormInput() {
     const nameField = document.getElementById("nameField");
     const itemField = document.getElementById("itemField");
     const moneyField = document.getElementById("moneyField");
-    
+
     let name = nameField.value;
     let itemNumber = itemField.value;
     let money = moneyField.value;
@@ -27,3 +27,8 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>Change: $" + change + "</p>";
     }
 }
+function showList() {
+    OUTPUT.innerHTML += "<h3>These are the items on your shopping list:</h3>";
+    for (let i = 0; i < shoppingList.length; i++) {
+        OUTPUT.innerHTML += "<p>" + shoppingList[i] + "</p>";
+    }
