@@ -3,6 +3,14 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
 let price = [4,8,5,6]
+
+function showMenu() {
+
+    OUTPUT.innerHTML = "<h2>Menu</h2>";
+    for (let i = 0; i < menu.length; i++) {
+        OUTPUT.innerHTML += "<p>" + (i + 1) + menu[i] + " - $" + prices[i] + "</p>";
+    }
+}
 function getFormInput() {
      OUTPUT.innerHTML = "";
     const nameField = document.getElementById("nameField");
@@ -28,10 +36,4 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>Change: $" + change + "</p>";
     }
 }
-function showMenu() {
 
-    OUTPUT.innerHTML = "<h2>Menu</h2>";
-    for (let i = 0; i < menu.length; i++) {
-        OUTPUT.innerHTML += "<p>" + (i + 1) + menu[i] + " - $" + prices[i] + "</p>";
-    }
-}
