@@ -30,7 +30,6 @@ function getFormInput() {
 function showMenu() {
 
     OUTPUT.innerHTML = "<h2>Menu</h2>";
-
     for (let i = 0; i < menu.length; i++) {
         OUTPUT.innerHTML += "<p>" + (i + 1) + ". " + menu[i] + " - $" + prices[i] + "</p>";
     }
