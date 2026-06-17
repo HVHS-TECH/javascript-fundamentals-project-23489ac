@@ -2,13 +2,13 @@ console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
-let price = [4,8,5,6]
+let price = ["4","8","5","6"]
 
 function showMenu() {
 
     OUTPUT.innerHTML = "<h2>Menu</h2>";
     for (let i = 0; i < menu.length; i++) {
-        OUTPUT.innerHTML += "<p>" + (i + 1) + menu[i] + " - $" + prices[i] + "</p>";
+        OUTPUT.innerHTML += "<p>" + (i + 1) + menu[i] + " - $" + price[i] + "</p>";
     }
 }
 function getFormInput() {

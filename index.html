@@ -16,7 +16,7 @@
 <p>Chesse Melt</p>
 <form id="welcomeForm" onsubmit="return false;">
     <input type="text" id="nameField" name="formName" placeholder="Name" required>
-    <input type="submit" onClick= "getNameInput()">
+    <input type="submit" onClick= getNameInput()>
     <br><br>
 
     <br><label for="itemField">Shopping List:</label>
@@ -25,7 +25,8 @@
     <br><br>
     <label>Your items:</label>
 
-
+ <br><br>
+    <button type="reset" onclick="getNameInput()">clear all</button>
 
   </form> 
   <div id="spaceForJavaScriptOutput">
