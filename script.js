@@ -4,6 +4,7 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
 let price = [4,8,5,6]
 function getFormInput() {
+     OUTPUT.innerHTML = "";
     const nameField = document.getElementById("nameField");
     const itemField = document.getElementById("itemField");
     const moneyField = document.getElementById("moneyField");
@@ -37,9 +38,4 @@ function showMenu() {
 
 function resetOrder() {
 
-    document.getElementById("nameField").value = "";
-    document.getElementById("itemField").value = "";
-    document.getElementById("moneyField").value = "";
-
-    OUTPUT.innerHTML = "";
 }
