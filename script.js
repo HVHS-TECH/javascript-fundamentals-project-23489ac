@@ -5,13 +5,13 @@ let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
 let price = [4,8,5,6]
 function getFormInput() {
     const nameField = document.getElementById("nameField");
-    let name = nameField.value;
-
     const itemField = document.getElementById("itemField");
-    let itemNumber = itemField.value;
-
     const moneyField = document.getElementById("moneyField");
+    
+    let name = nameField.value;
+    let itemNumber = itemField.value;
     let money = moneyField.value;
+    
     let food = menu[userChoice - 1];
 
     if (userMoney < food.price) {
