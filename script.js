@@ -35,7 +35,3 @@ function showMenu() {
         OUTPUT.innerHTML += "<p>" + (i + 1) + menu[i] + " - $" + prices[i] + "</p>";
     }
 }
-
-function resetOrder() {
-
-}
