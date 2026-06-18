@@ -1,11 +1,10 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
-let price = ["4","8","5","6"]
-
-
 function getFormInput() {
+    let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
+    let price = ["4","8","5","6"]
+
     OUTPUT.innerHTML = "";
     const nameField = document.getElementById("nameField");
     const itemField = document.getElementById("itemField");
@@ -14,14 +13,6 @@ function getFormInput() {
     let name = nameField.value;
     let itemNumber = itemField.value;
     let money = moneyField.value;
-
-    if ( !userName) {
-     OUTPUT.innerHTML += "<p> Please enter your name.</p>";
-} else if (userName.length < 3) {
-     OUTPUT.innerHTML += "<p> The name must be at least three letters long .</p>";
-}else if (NAME_fIELD.checkValidity() === false){
-    OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
-
     
     let item = menu[userChoice - 1];
 
@@ -41,48 +32,3 @@ function getFormInput() {
 }
 
 
-
-
-
-let users = [];
-function getNameInput() {
-    const NAME_fIELD = document.getElementById("nameField");
-    const AGE_fIELD = document.getElementById("ageField");
-    const MONEY_fIELD = document.getElementById("moneyField");
-    const CHOCOLATE_FIELD = document.getElementById("chocolate_Field");
-    let userName = NAME_fIELD.value;
-    let userAge = AGE_fIELD.value;
-    let usermoney = MONEY_fIELD.value;
-    let chocolateChoice = CHOCOLATE_FIELD.value;
-
-if ( !userName) {
-     OUTPUT.innerHTML += "<p> Please enter your name.</p>";
-} else if (userName.length < 3) {
-     OUTPUT.innerHTML += "<p> The name must be at least three letters long .</p>";
-}else if (NAME_fIELD.checkValidity() === false){
-    OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
-}else {
-    let userObject = {
-     name : userName,
-     age : userAge,  
-     money : usermoney,
-     chocolate: chocolateChoice,
-    }
-     users.push(userObject);
-
-        OUTPUT.innerHTML = "<p>Your details are saved successfully.</p>";
-
-}
-
-};
-  function showUsers() {
-OUTPUT.innerHTML = ""
-    
-    for (let i = 0; i < users.length; i++) {
-        OUTPUT.innerHTML += "<h3> Welcome to my page : "+ users[i].name +"</h3>";
-        OUTPUT.innerHTML += "<p>Your age is : " + users[i].age + "</p>";
-        OUTPUT.innerHTML += "<p>In your Pocket Money you have : $ " + users[i].money + " </p>";
-        OUTPUT.innerHTML += "<p> your Chocolate Choice is : " + users[i].chocolate + "</p>";
-
-    }
-}
