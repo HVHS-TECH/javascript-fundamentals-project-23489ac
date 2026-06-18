@@ -6,7 +6,7 @@ let price = ["4","8","5","6"]
 
 
 function getFormInput() {
-     OUTPUT.innerHTML = "";
+    OUTPUT.innerHTML = "";
     const nameField = document.getElementById("nameField");
     const itemField = document.getElementById("itemField");
     const moneyField = document.getElementById("moneyField");
