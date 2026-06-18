@@ -14,18 +14,26 @@ function getFormInput() {
     let name = nameField.value;
     let itemNumber = itemField.value;
     let money = moneyField.value;
-    
-    let food = menu[userChoice - 1];
 
-    if (userMoney < food.price) {
+    if ( !userName) {
+     OUTPUT.innerHTML += "<p> Please enter your name.</p>";
+} else if (userName.length < 3) {
+     OUTPUT.innerHTML += "<p> The name must be at least three letters long .</p>";
+}else if (NAME_fIELD.checkValidity() === false){
+    OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
+
+    
+    let item = menu[userChoice - 1];
+
+    if (userMoney < item.price) {
         OUTPUT.innerHTML = "<p>Sorry, you do not have enough money.</p>";
  } else {
-     let change = userMoney - food.price;
+     let change = userMoney - item.price;
 
         OUTPUT.innerHTML = "<h2>Receipt</h2>";
         OUTPUT.innerHTML += "<p>Name: " + userName + "</p>";
         OUTPUT.innerHTML += "<p>Item: " + food.name + "</p>";
-        OUTPUT.innerHTML += "<p>Price: $" + food.price + "</p>";
+        OUTPUT.innerHTML += "<p>Price: $" + item.price + "</p>";
         OUTPUT.innerHTML += "<p>Money Given: $" + userMoney + "</p>";
         OUTPUT.innerHTML += "<p>Change: $" + change + "</p>";
         
