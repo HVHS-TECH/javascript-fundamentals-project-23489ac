@@ -3,16 +3,16 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 function getFormInput() {
     let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
-    let price = ["4","8","5","6"]
+    let price = ["4","8","5","6"];
 
     OUTPUT.innerHTML = "";
     const nameField = document.getElementById("nameField");
     const itemField = document.getElementById("itemField");
     const moneyField = document.getElementById("moneyField");
 
-    let name = nameField.value;
-    let itemNumber = itemField.value;
-    let money = moneyField.value;
+    let userNamename = nameField.value;
+    let userChoice = itemField.value;
+    let userMoneymoney = moneyField.value;
     
     let item = menu[userChoice - 1];
 
