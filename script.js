@@ -24,7 +24,7 @@ function getFormInput() {
         OUTPUT.innerHTML = "<h2>Receipt</h2>";
         OUTPUT.innerHTML += "<p>Name: " + userName + "</p>";
         OUTPUT.innerHTML += "<p>Item: " + useritem + "</p>";
-        OUTPUT.innerHTML += "<p>Price: $" + itemprice + "</p>";
+        OUTPUT.innerHTML += "<p>Price: $" + item.price + "</p>";
         OUTPUT.innerHTML += "<p>Money Given: $" + userMoney + "</p>";
         OUTPUT.innerHTML += "<p>Change: $" + change + "</p>";
         
