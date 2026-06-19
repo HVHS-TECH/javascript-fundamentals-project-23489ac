@@ -10,25 +10,25 @@ function getFormInput() {
     const itemField = document.getElementById("itemField");
     const moneyField = document.getElementById("moneyField");
 
-    let userNamename = nameField.value;
-    let userChoice = itemField.value;
-    let userMoneymoney = moneyField.value;
+    let userName = nameField.value;
+    let useritem = itemField.value;
+    let userMoney = moneyField.value;
     
     let item = menu[userChoice - 1];
 
-    if (userMoney < item.price) {
+    if (userMoney < itemprice) {
         OUTPUT.innerHTML = "<p>Sorry, you do not have enough money.</p>";
  } else {
      let change = userMoney - item.price;
-
+     for (let i = 0; i < users.length; i++) {
         OUTPUT.innerHTML = "<h2>Receipt</h2>";
         OUTPUT.innerHTML += "<p>Name: " + userName + "</p>";
-        OUTPUT.innerHTML += "<p>Item: " + food.name + "</p>";
-        OUTPUT.innerHTML += "<p>Price: $" + item.price + "</p>";
+        OUTPUT.innerHTML += "<p>Item: " + useritem + "</p>";
+        OUTPUT.innerHTML += "<p>Price: $" + itemprice + "</p>";
         OUTPUT.innerHTML += "<p>Money Given: $" + userMoney + "</p>";
         OUTPUT.innerHTML += "<p>Change: $" + change + "</p>";
         
     }
 }
 
-
+}
