@@ -19,6 +19,8 @@ function getFormInput() {
         OUTPUT.innerHTML = "<p>Sorry, you do not have enough money.</p>";
  } else {
      let change = userMoney - item.price;
+     function calculateChange(_money, _price) {
+    return _money - _price;
        OUTPUT.innerHTML = "";
         OUTPUT.innerHTML = "<h2>Receipt</h2>";
         OUTPUT.innerHTML += "<p>Name: " + userName + "</p>";
