@@ -19,6 +19,7 @@ function getFormInput() {
         OUTPUT.innerHTML = "<p>Sorry, you do not have enough money.</p>";
  } else {
      let change = userMoney - item.price;
+      var change = calculateChange(usermoney, PRICE)
      function calculateChange(_money, _price) {
     return _money - _price;
        OUTPUT.innerHTML = "";
