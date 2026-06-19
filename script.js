@@ -1,10 +1,10 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-function getFormInput() {
-    let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
-    let price = ["4","8","5","6"];
+let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
+let price = ["4","8","5","6"];
 
+function getFormInput() {
     OUTPUT.innerHTML = "";
     const nameField = document.getElementById("nameField");
     const itemField = document.getElementById("itemField");
@@ -20,7 +20,7 @@ function getFormInput() {
         OUTPUT.innerHTML = "<p>Sorry, you do not have enough money.</p>";
  } else {
      let change = userMoney - item.price;
-     for (let i = 0; i < users.length; i++) {
+       OUTPUT.innerHTML = "";
         OUTPUT.innerHTML = "<h2>Receipt</h2>";
         OUTPUT.innerHTML += "<p>Name: " + userName + "</p>";
         OUTPUT.innerHTML += "<p>Item: " + useritem + "</p>";
@@ -31,4 +31,3 @@ function getFormInput() {
     }
 }
 
-}
