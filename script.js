@@ -23,31 +23,6 @@ OUTPUT.innerHTML += "<p>" + i + ". " + menu[i]  + " $"  + price[i]   + "</p>";
 
 function addOrder(){
 const itemField = document.getElementById("itemField");
-let userItem = AGE_fIELD.value;    
+let userItem =  itemFieldvalue;  
+
 }
-
-
-function getFormInput() {
-    OUTPUT.innerHTML = "";
-
-    let name = document.getElementById("nameField").value;
-    let itemNumber = Number(document.getElementById("itemField").value);
-    let money = Number(document.getElementById("moneyField").value);
-
-    let food = menu[itemNumber - 1];
-    let foodPrice = Number(price[itemNumber - 1]);
-
-    if (money < foodPrice) {
-        OUTPUT.innerHTML = "<p>Sorry, you do not have enough money.</p>";
-    } else {
-        let change = money - foodPrice;
-
-        OUTPUT.innerHTML = "<h2>Receipt</h2>";
-        OUTPUT.innerHTML += "<p>Name: " + name + "</p>";
-        OUTPUT.innerHTML += "<p>Item: " + food + "</p>";
-        OUTPUT.innerHTML += "<p>Price: $" + foodPrice + "</p>";
-        OUTPUT.innerHTML += "<p>Money Given: $" + money + "</p>";
-        OUTPUT.innerHTML += "<p>Change: $" + change + "</p>";
-    }
-}
-
