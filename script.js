@@ -4,6 +4,29 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
 let price = ["4","8","5","6"];
 
+const OUTPUT = document.getElementById("output");
+
+const MENU_OUTPUT = document.getElementById("menuDisplay");
+
+let orderItem ="";
+let orderPrice =0;
+
+unction showMenu() {
+
+    MENU_OUTPUT.innerHTML = "<h2>Menu</h2>";
+
+    for (let i = 0; i < menu.length; i++) {
+
+        MENU_OUTPUT.innerHTML += 
+        "<p>" + (i + 1) + ". "  + menu[i]  + " $"  + price[i]   + "</p>";
+
+    }
+
+}
+
+
+
+
 function getFormInput() {
     OUTPUT.innerHTML = "";
 
