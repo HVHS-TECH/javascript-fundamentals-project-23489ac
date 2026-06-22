@@ -21,7 +21,7 @@ OUTPUT.innerHTML += "<p>" + i + ". " + menu[i]  + " $"  + price[i]   + "</p>";
 
 }
 
-function addorder(){
+function addOrder(){
     
 }
 
