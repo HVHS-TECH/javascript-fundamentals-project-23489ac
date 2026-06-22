@@ -21,11 +21,14 @@
 <p>Chesse Melt</p>
 <form id="welcomeForm" onsubmit="return false;">
 
-    <input type="text" id="nameField"  value=" Name" placeholder="Enter your name" required>
+   <label for="Name"></label>
+    <input type="text" id="nameField" placeholder="Enter your name" required>
     <br><br>
-    <input type="number" id="itemField"  value="item" placeholder="Enter item number" required>
+     <label for="item"></label>
+    <input type="number" id="itemField"  placeholder="Enter item number" required>
     <br><br>
-    <input type="number" id="moneyField" value= "Money"placeholder="Enter money" required>
+     <label for="Money"></label>
+    <input type="number" id="moneyField" placeholder="Enter money" required>
     <br><br>
 
     <input type="submit" value="Add Order" onclick="addOrder()">
