@@ -22,7 +22,8 @@ OUTPUT.innerHTML += "<p>" + i + ". " + menu[i]  + " $"  + price[i]   + "</p>";
 }
 
 function addOrder(){
-    
+const itemField = document.getElementById("itemField");
+let userItem = AGE_fIELD.value;    
 }
 
 
