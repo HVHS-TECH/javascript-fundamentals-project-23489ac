@@ -4,8 +4,6 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
 let price = ["4","8","5","6"];
 
-const OUTPUT = document.getElementById("output");
-
 const MENU_OUTPUT = document.getElementById("menuDisplay");
 
 let orderItem ="";
