@@ -37,5 +37,11 @@ function placeOrder(){
     const NAME_FIELD = document.getElementById("nameField");
     const MONEY_FIELD = document.getElementById("moneyField");
 
-    let userName = N
+    let userName = NAME_FIELD.value;
+    let userMoney = MONEY_FIELD.value;
+
+    if (userMoney >= orderPrice){
+        let change = userMoney - orderPrice;
+         OUTPUT.innerHTML=""
+    }
 }
