@@ -42,6 +42,13 @@ function placeOrder(){
 
     if (userMoney >= orderPrice){
         let change = userMoney - orderPrice;
-         OUTPUT.innerHTML=""
+
+         OUTPUT.innerHTML ="<h2>  Receipt </h2>"
+         OUTPUT.innerHTML += "<p> Name :" +userName+
+
+
+
+
+
     }
 }
