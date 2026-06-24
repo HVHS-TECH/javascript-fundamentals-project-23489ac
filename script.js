@@ -1,9 +1,5 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
-let price = ["4","8","5","6"];
-let images = [    ]
 const MENU_OUTPUT = document.getElementById("menuDisplay");
 
 let orderItem ="";
@@ -32,6 +28,9 @@ if (itemNumber>=1 && itemNumber<=4){
 }
 
 function placeOrder(){
+   let menu = ["Cupcakes", "Burgar", "Fries", "Cheese Melt"];
+   let price = ["4","8","5","6"];
+   
     const NAME_FIELD = document.getElementById("nameField");
     const MONEY_FIELD = document.getElementById("moneyField");
 
