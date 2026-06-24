@@ -23,7 +23,7 @@ if (itemNumber>=1 && itemNumber <=4){
      OUTPUT.innerHTML = "<p> You seleced" + orderItem +"</p>"
 
 }else{ 
-      OUTPUT.innerHTML = "<P> Please choose a number between 1 to 4 </p>"
+      OUTPUT.innerHTML = "<P> Please choose a number between 1 to 4. </p>"
     }
 }
 
