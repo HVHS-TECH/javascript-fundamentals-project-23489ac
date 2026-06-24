@@ -32,10 +32,9 @@ if (itemNumber>=1 && itemNumber<=4){
 }
 
 
-function calculateChange (_money)
-
-    return _money - _price;
-
+function calculateChange (_money , _price){
+     return _money - _price;
+}
 
 function placeOrder(){
     const NAME_FIELD = document.getElementById("nameField");
