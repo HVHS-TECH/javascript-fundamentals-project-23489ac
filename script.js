@@ -32,7 +32,7 @@ if (itemNumber>=1 && itemNumber<=4){
 }
 
 
-function calculateChange _money,_price)
+function calculateChange ()
 
     return _money - _price;
 
@@ -45,8 +45,7 @@ function placeOrder(){
     let userMoney = MONEY_FIELD.value;
 
     if (userMoney >= orderPrice){
-        let change = userMoney - orderPrice;
-
+         var change = calculateChange(usermoney, price)
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name :" + userName +"</p>"
          OUTPUT.innerHTML += "<p> item:" + price +"</p>"
