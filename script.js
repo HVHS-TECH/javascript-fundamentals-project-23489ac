@@ -39,7 +39,7 @@ function placeOrder(){
     let userMoney = MONEY_FIELD.value;
 
     if (userMoney >= orderPrice){
-         let change = usermoney - price
+         let change = userMoney - price
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name :" + userName +"</p>"
          OUTPUT.innerHTML += "<p> item:" + price +"</p>"
