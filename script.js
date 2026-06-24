@@ -34,5 +34,8 @@ if (itemNumber>=1 && itemNumber<=4){
 }
 
 function placeOrder(){
-    const Name_Field
+    const NAME_FIELD = document.getElementById("nameField");
+    const MONEY_FIELD = document.getElementById("moneyField");
+
+    let userName = N
 }
