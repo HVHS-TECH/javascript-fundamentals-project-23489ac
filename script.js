@@ -46,13 +46,9 @@ function placeOrder(){
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name :" + userName +"</p>"
          OUTPUT.innerHTML += "<p> item:" + price +"</p>"
-         OUTPUT.innerHTML += "<p> Total cost:" + 
-         OUTPUT.innerHTML += 
-
-
-
-
-
+         OUTPUT.innerHTML += "<p> Total cost:" + orderPrice +"</p>"
+         OUTPUT.innerHTML += "<p> The Money"+ userMoney+"</p>"
+         OUTPUT.innerHTML += "<p> The change" + change +"</p>"
 
     }else{
         OUTPUT.innerHTML = "<p> Sorry, you do not have enough money.</p>"
