@@ -52,6 +52,6 @@ function placeOrder(){
 
 
     }else{
-        
+        OUTPUT.innerHTML = "<p> Sorry, you do not have "
     }
 }
