@@ -32,7 +32,7 @@ if (itemNumber>=1 && itemNumber<=4){
 }
 
 
-function calculateChange ()
+function calculateChange (_money)
 
     return _money - _price;
 
