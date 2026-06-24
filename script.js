@@ -17,7 +17,7 @@ function addOrder(){
 const itemField = document.getElementById("itemField");
 let userItem =  itemField.value;  
 
-if (itemNumber>=1 && itemNumber<=4){
+if (itemNumber>=1 && itemNumber <=4){
      orderItem = menu[itemNumber - 1];
      orderMenu = price[itemnumber-1];
      OUTPUT.innerHTML = "<p> You seleced" + orderItem +"</p>"
