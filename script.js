@@ -31,7 +31,6 @@ if (itemNumber>=1 && itemNumber<=4){
     }
 }
 
-
 function placeOrder(){
     const NAME_FIELD = document.getElementById("nameField");
     const MONEY_FIELD = document.getElementById("moneyField");
@@ -40,7 +39,7 @@ function placeOrder(){
     let userMoney = MONEY_FIELD.value;
 
     if (userMoney >= orderPrice){
-         let  = usermoney- price
+         let change = usermoney - price
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name :" + userName +"</p>"
          OUTPUT.innerHTML += "<p> item:" + price +"</p>"
