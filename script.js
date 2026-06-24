@@ -14,9 +14,7 @@ function showMenu() {
 MENU_OUTPUT.innerHTML = "<h2>Menu</h2>";
  for (let i = 0; i < menu.length; i++) {
     MENU_OUTPUT.innerHTML += "<p>" + (i+1) + ". " + menu[i]  + " $"  + price[i]  + "</p>";
-
     }
-
 }
 
 function addOrder(){
