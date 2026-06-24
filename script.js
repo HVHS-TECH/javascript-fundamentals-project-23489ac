@@ -19,7 +19,7 @@ MENU_OUTPUT.innerHTML = "<h2>Menu</h2>";
 
 function addOrder(){
 const itemField = document.getElementById("itemField");
-let userItem =  itemFieldvalue;  
+let userItem =  itemField.value;  
 
 if (itemNumber>=1 && itemNumber<=4){
      orderItem = menu[itemNumber - 1];
