@@ -32,8 +32,8 @@ if (itemNumber>=1 && itemNumber<=4){
 }
 
 
-function calculateChange (_money , _price){
-     return _money - _price;
+function calculateChange (_usermoney , _price){
+     return _usermoney - _price;
 }
 
 function placeOrder(){
