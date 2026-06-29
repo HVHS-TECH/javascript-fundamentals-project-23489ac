@@ -41,7 +41,9 @@ function placeOrder(){
     let userName = NAME_FIELD.value;
     let userMoney = MONEY_FIELD.value;
 
-    if (userMoney >= orderPrice){
+    if (NAME_fIELD.checkValidity() === false){
+    OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
+    }else if (userMoney >= orderPrice){
          let change = userMoney - orderPrice ;
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
@@ -49,8 +51,6 @@ function placeOrder(){
          OUTPUT.innerHTML += "<p> Total cost: " + orderPrice + "</p>"
          OUTPUT.innerHTML += "<p> Money Given "+ userMoney+ "</p>"
          OUTPUT.innerHTML += "<p> The change: $" + change + "</p>"
-    }else if (NAME_fIELD.checkValidity() === false){
-    OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
     }else{
         OUTPUT.innerHTML = "<p> Sorry, you do not have enough money.</p>"
     }
