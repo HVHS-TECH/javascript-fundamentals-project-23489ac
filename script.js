@@ -45,7 +45,7 @@ function placeOrder(){
          let change = userMoney - orderPrice ;
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
-         OUTPUT.innerHTML += "<p> item: " + orderItem + "</p>"
+         OUTPUT.innerHTML += "<p> Item: " + orderItem + "</p>"
          OUTPUT.innerHTML += "<p> Total cost: " + orderPrice + "</p>"
          OUTPUT.innerHTML += "<p> Money Given "+ userMoney+ "</p>"
          OUTPUT.innerHTML += "<p> The change: $" + change + "</p>"
