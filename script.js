@@ -49,7 +49,8 @@ function placeOrder(){
          OUTPUT.innerHTML += "<p> Total cost: " + orderPrice + "</p>"
          OUTPUT.innerHTML += "<p> Money Given "+ userMoney+ "</p>"
          OUTPUT.innerHTML += "<p> The change: $" + change + "</p>"
-
+    }else if (NAME_fIELD.checkValidity() === false){
+    OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
     }else{
         OUTPUT.innerHTML = "<p> Sorry, you do not have enough money.</p>"
     }
