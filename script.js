@@ -41,12 +41,7 @@ function placeOrder(){
     let userName = NAME_FIELD.value;
     let userMoney = MONEY_FIELD.value;
 
-    if (userName.length < 3) {
-     OUTPUT.innerHTML += "<p> The name must be at least three letters long .</p>";
-}else if (NAME_fIELD.checkValidity() === false){
-    OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
-
- }  else if (userMoney >= orderPrice){
+    if (userMoney >= orderPrice){
          let change = userMoney - orderPrice ;
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
