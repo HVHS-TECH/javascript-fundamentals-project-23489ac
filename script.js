@@ -46,7 +46,7 @@ function placeOrder(){
 }else if (NAME_fIELD.checkValidity() === false){
     OUTPUT.innerHTML += "<p>please fill all the fiels correctly </p>";
 
-    if (userMoney >= orderPrice){
+ }  else if (userMoney >= orderPrice){
          let change = userMoney - orderPrice ;
          OUTPUT.innerHTML ="<h2>  Receipt </h2>"
          OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
