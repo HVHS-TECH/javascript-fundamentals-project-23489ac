@@ -41,8 +41,10 @@ function placeOrder(){
     let userName = NAME_FIELD.value;
     let userMoney = MONEY_FIELD.value;
 
-    if (NAME_FIELD.checkValidity() === false){
-    OUTPUT.innerHTML = "<p>Please fill all the fiels correctly </p>";
+    if (NAME_FIELD.checkValidity() === false||
+       ITEM_FIELD.checkValidity()=== false ||
+       MONEY_FIELD.checkValidity()=== false) {
+    OUTPUT.innerHTML = "<p>Please fill all the </p>";
 
     }else if (userMoney >= orderPrice){
          let change = userMoney - orderPrice ;
