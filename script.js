@@ -44,7 +44,7 @@ function placeOrder(){
     if (NAME_FIELD.checkValidity() === false||
        ITEM_FIELD.checkValidity()=== false ||
        MONEY_FIELD.checkValidity()=== false) {
-    OUTPUT.innerHTML = "<p>Please fill all the </p>";
+    OUTPUT.innerHTML = "<p>Please fill in all the details. </p>";
 
     }else if (userMoney >= orderPrice){
          let change = userMoney - orderPrice ;
