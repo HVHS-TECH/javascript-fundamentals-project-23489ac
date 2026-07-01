@@ -36,6 +36,7 @@ if (itemNumber>=1 && itemNumber <=4){
 function placeOrder(){
    
     const NAME_FIELD = document.getElementById("nameField");
+    const ITEM_FIELD = document.getElementById("itemField");
     const MONEY_FIELD = document.getElementById("moneyField");
 
     let userName = NAME_FIELD.value;
@@ -69,3 +70,4 @@ function resetOrder() {
     orderPrice = 0;
 
 }
+showMenu();
