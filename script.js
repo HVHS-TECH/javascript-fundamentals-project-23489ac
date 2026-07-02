@@ -5,7 +5,7 @@ const MENU_OUTPUT = document.getElementById("menuDisplay");
 
 let menu = ["Cupcakes", "Burger", "Fries", "Cheese Melt"];
 let price = [4,8,5,6];
-let image = ["cupcake.jpg" , burger.jpg ]
+let image = ["cupcake.jpg" , "burger.jpg", "Fries.jpg","Chesse"]
 let orderItem ="";
 let orderPrice =0;
 
