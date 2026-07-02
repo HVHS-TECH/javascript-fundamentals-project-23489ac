@@ -5,7 +5,7 @@ const MENU_OUTPUT = document.getElementById("menuDisplay");
 
 let menu = ["Cupcakes", "Burger", "Fries", "Cheese Melt"];
 let price = [4,8,5,6];
-let image = ["Cupcake.jpg" , "Burger.jpg", "Fries.jpg","Cheesemelt.jpg"];
+let image = ["Cupcake.jpg" , "Burger.jpg", "Fries.jpg","Chessemelt.jpg"];
 
 let orderItem ="";
 let orderPrice =0;
@@ -15,7 +15,7 @@ function showMenu() {
 MENU_OUTPUT.innerHTML = "<h2>Menu</h2>";
  for (let i = 0; i < menu.length; i++) {
     MENU_OUTPUT.innerHTML += "<p>" + (i+1) + ". " + menu[i]  + " $"  + price[i]  + "</p>";
-     MENU_OUTPUT.innerHTML += "<img src='" + image[i] + "' width='100'><br><br>";
+     MENU_OUTPUT.innerHTML += "<img src='" + image[i] + "' width='200'><br><br>";
     }
 }
 
