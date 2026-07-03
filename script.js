@@ -23,8 +23,8 @@ function addOrder(){
 
 const ITEM_FIELD = document.getElementById("itemField");
 let itemNumber = ITEM_FIELD.value;  
-
-if (itemNumber>=1 && itemNumber <=4){
+if (ITEM_FIELD.checkValidity()=== false)
+else if (itemNumber>=1 && itemNumber <=4){
      orderItem = menu[itemNumber - 1];
      orderPrice = price[itemNumber-1];
      OUTPUT.innerHTML = "<p> You selected " + orderItem + "</p>"
