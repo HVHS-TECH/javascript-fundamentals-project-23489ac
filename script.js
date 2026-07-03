@@ -15,7 +15,7 @@ function showMenu() {
 MENU_OUTPUT.innerHTML = "<h2>Menu</h2>";
  for (let i = 0; i < menu.length; i++) {
     MENU_OUTPUT.innerHTML += "<p>" + (i+1) + ". " + menu[i]  + " $"  + price[i]  + "</p>";
-     MENU_OUTPUT.innerHTML += "<img src='" + image[i] + "' width='200'";
+     MENU_OUTPUT.innerHTML += "<img src='" + image[i] + "' width='200'><br><br>";
     }
 }
 
