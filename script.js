@@ -41,7 +41,9 @@ function placeOrder(){
     const MONEY_FIELD = document.getElementById("moneyField");
 
     let userName = NAME_FIELD.value;
+    let userItem = ITEM_FIELD.value;
     let userMoney = MONEY_FIELD.value;
+
 
     if (NAME_FIELD.checkValidity() === false||
        ITEM_FIELD.checkValidity()=== false ||
