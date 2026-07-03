@@ -7,8 +7,6 @@ let menu = ["Cupcakes", "Burger", "Fries", "Cheese Melt"];
 let price = [4,8,5,6];
 let image = ["Cupcake.jpg" , "Burger.jpg", "Fries.jpg","Chessemelt.jpg"];
 
-let orderItem ="";
-let orderPrice =0;
 
 function showMenu() {
 
