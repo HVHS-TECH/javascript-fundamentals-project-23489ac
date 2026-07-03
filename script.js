@@ -54,7 +54,7 @@ function placeOrder(){
          OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
          OUTPUT.innerHTML += "<p> Item: " + orderItem + "</p>"
          OUTPUT.innerHTML += "<p> Total cost: " + orderPrice + "</p>"
-         OUTPUT.innerHTML += "<p> Money Given "+ userMoney+ "</p>"
+         OUTPUT.innerHTML += "<p> Money Given: $"+ userMoney+ "</p>"
          OUTPUT.innerHTML += "<p> The change: $" + change + "</p>"
     }else{
         OUTPUT.innerHTML = "<p> Sorry, you do not have enough money.</p>"
